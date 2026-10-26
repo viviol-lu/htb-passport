@@ -1,0 +1,4 @@
+*.zip
+*.html
+SHA256SUMS.txt
+.DS_Store
