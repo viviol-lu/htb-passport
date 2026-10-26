@@ -6,65 +6,67 @@
 
 ## 繁體中文
 
-自動追蹤 HTB Academy 的 Path、模組與學習章節，依章節保存筆記，支援 Markdown 與 HTML 匯出。Chrome／Firefox 擴充功能，介面與手冊可切換繁體中文／English。
+自動追蹤 HTB Academy 的 Path、模組與學習章節，並依章節儲存筆記，支援 Markdown 與 HTML 匯出。這是 Chrome／Firefox 擴充套件，介面與操作手冊都可以切換繁體中文與 English。
 
 作者：Vivian Lu · [Vivian@SecMomBag](https://vvnblog.com/en/)
 
-> 非官方工具。自動化讀取可能受 HTB 使用政策限制；版本編號與「非官方」標示不代表取得 HTB 授權或已上架。
+> 非官方工具。自動化讀取可能受 HTB 使用政策限制；版本編號與「非官方」標示，並不代表已取得 HTB 授權或已上架。
 
 ### 下載
 
-一律從 **Releases** 下載最新版（版本號以該頁為準）：
+請一律從 **Releases** 下載最新版，版本號以該頁為準。
 
 👉 **<https://github.com/viviol-lu/htb-passport/releases/latest>**
 
-每個版本的附件：
+每個版本都會附上以下檔案。
 
 | 附件 | 說明 |
 |---|---|
-| `academy-passport-chrome-*.zip` | Chrome 擴充包 |
-| `academy-passport-firefox-*.zip` | Firefox 擴充包 |
-| `installation-guide-*.html` | 離線安裝手冊（可在安裝前閱讀） |
+| `academy-passport-chrome-*.zip` | Chrome 擴充套件安裝包 |
+| `academy-passport-firefox-*.zip` | Firefox 擴充套件安裝包 |
+| `installation-guide-*.html` | 離線安裝手冊，可在安裝前先閱讀 |
 | `user-guide-*.html` | 操作手冊 |
-| `SHA256SUMS.txt` | 檔案校驗碼 |
+| `SHA256SUMS.txt` | 檔案雜湊值，用來驗證完整性 |
 
-#### 校驗下載（建議）
+#### 驗證下載（建議）
 
-下載後可比對 SHA-256，確認檔案未被竄改：
+下載後可以比對 SHA-256 雜湊值，確認檔案沒有被竄改。
 
 ```bash
 shasum -a 256 academy-passport-*.zip
 ```
 
-比對結果應與同一個 Release 內 `SHA256SUMS.txt` 的值一致。
+比對出來的結果，應該與同一個 Release 裡 `SHA256SUMS.txt` 所列的值一致。
 
 ### 安裝
 
 **Chrome**
-1. 解壓縮下載的 Chrome 擴充包 ZIP。
-2. 開啟 `chrome://extensions`，開啟「開發人員模式」。
-3. 選「載入未封裝項目」，選擇解壓出來的資料夾。
-4. 重新整理已登入的 HTB Academy 頁面。
+
+1. 將下載的 Chrome 安裝包 ZIP 解壓縮。
+2. 開啟 `chrome://extensions`，並開啟「開發人員模式」。
+3. 點選「載入未封裝項目」，選擇剛才解壓縮出來的資料夾。
+4. 重新整理已經登入的 HTB Academy 分頁。
 
 **Firefox**
-1. 解壓縮下載的 Firefox 擴充包 ZIP。
+
+1. 將下載的 Firefox 安裝包 ZIP 解壓縮。
 2. 開啟 `about:debugging#/runtime/this-firefox`。
-3. 選「暫時載入附加元件」，選擇解壓資料夾內的 `manifest.json`（Firefox 142 或更新版本）。
-4. 重新整理 Academy 頁面。
+3. 點選「暫時載入附加元件」，選擇解壓縮資料夾裡的 `manifest.json`，需要 Firefox 142 或更新的版本。
+4. 重新整理 Academy 分頁。
 
-> Firefox 此方式為開發測試安裝，關閉瀏覽器後需要重新載入；正式持續安裝需 Mozilla 簽署，本專案尚未上架或簽署。更新後請重新載入擴充功能再重新整理 Academy。
+> Firefox 的這種方式屬於開發測試安裝，關閉瀏覽器後需要重新載入；若要長期安裝，必須經過 Mozilla 簽署，而本專案尚未上架或簽署。更新之後，請先重新載入擴充套件，再重新整理 Academy。
 
-詳細圖文步驟請見同一個 Release 附件中的安裝手冊 HTML（`installation-guide-*.html`）。
+詳細的圖文步驟，請參考同一個 Release 附件裡的安裝手冊 HTML（`installation-guide-*.html`）。
 
-### 權限說明
+### 隱私與權限
 
-擴充套件僅要求 `storage`（本機保存筆記與設定）與 `activeTab`，只在 `https://academy.hackthebox.com/*` 運作。筆記與資料皆保存在本機瀏覽器，不上傳。
+這個擴充套件只會在 HTB Academy 網站上運作，不會讀取你在其他網站的瀏覽內容。所有筆記與設定，都只儲存在你自己的瀏覽器本機，不會上傳，也不會傳送到任何外部伺服器。它只要求運作所需的最小權限。
 
 ---
 
 ## English
 
-Automatically tracks your HTB Academy paths, modules and lesson sections, keeps notes per section, and exports to Markdown and HTML. A Chrome／Firefox extension; interface and guides switch between Traditional Chinese and English.
+Automatically tracks your HTB Academy paths, modules and lesson sections, keeps notes per section, and exports to Markdown and HTML. It is a Chrome／Firefox extension, and both the interface and the guides switch between Traditional Chinese and English.
 
 Author: Vivian Lu · [Vivian@SecMomBag](https://vvnblog.com/en/)
 
@@ -72,11 +74,11 @@ Author: Vivian Lu · [Vivian@SecMomBag](https://vvnblog.com/en/)
 
 ### Download
 
-Always get the newest build from **Releases** (the version number is shown there):
+Always get the newest build from **Releases**; the version number is shown there.
 
 👉 **<https://github.com/viviol-lu/htb-passport/releases/latest>**
 
-Assets in each release:
+Each release ships these files:
 
 | Asset | Description |
 |---|---|
@@ -84,36 +86,38 @@ Assets in each release:
 | `academy-passport-firefox-*.zip` | Firefox extension package |
 | `installation-guide-*.html` | Offline installation guide (readable before installing) |
 | `user-guide-*.html` | User guide |
-| `SHA256SUMS.txt` | File checksums |
+| `SHA256SUMS.txt` | Checksums for verifying integrity |
 
 #### Verify your download (recommended)
 
-After downloading, compare the SHA-256 hashes to confirm the files were not tampered with:
+After downloading, compare the SHA-256 hashes to confirm the files were not tampered with.
 
 ```bash
 shasum -a 256 academy-passport-*.zip
 ```
 
-The results should match the values in the `SHA256SUMS.txt` from the same release.
+The results should match the values listed in the `SHA256SUMS.txt` from the same release.
 
 ### Install
 
 **Chrome**
+
 1. Unzip the downloaded Chrome package.
 2. Open `chrome://extensions` and turn on **Developer mode**.
 3. Choose **Load unpacked** and select the extracted folder.
 4. Refresh any signed-in HTB Academy tab.
 
 **Firefox**
+
 1. Unzip the downloaded Firefox package.
 2. Open `about:debugging#/runtime/this-firefox`.
 3. Choose **Load Temporary Add-on** and select `manifest.json` inside the extracted folder (Firefox 142 or later).
-4. Refresh the Academy page.
+4. Refresh the Academy tab.
 
-> On Firefox this is a temporary developer install and must be reloaded after the browser restarts; a permanent install requires Mozilla signing, which this project has not done. After updating, reload the extension and refresh Academy.
+> On Firefox this is a temporary developer install and must be reloaded after the browser restarts. A permanent install requires Mozilla signing, which this project has not done. After updating, reload the extension and then refresh Academy.
 
 For step-by-step instructions with screenshots, see the installation guide HTML (`installation-guide-*.html`) attached to the same release.
 
-### Permissions
+### Privacy & permissions
 
-The extension requests only `storage` (to keep notes and settings locally) and `activeTab`, and runs only on `https://academy.hackthebox.com/*`. Notes and data stay in your local browser and are never uploaded.
+The extension runs only on the HTB Academy website and does not read your activity on other sites. All notes and settings stay locally in your own browser — they are never uploaded or sent to any external server. It requests only the minimum permissions needed to work.
