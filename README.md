@@ -60,7 +60,9 @@ shasum -a 256 academy-passport-*.zip
 
 ### 隱私與權限
 
-這個擴充套件只會在 HTB Academy 網站上運作，不會讀取你在其他網站的瀏覽內容。所有筆記與設定，都只儲存在你自己的瀏覽器本機，不會上傳，也不會傳送到任何外部伺服器。它只要求運作所需的最小權限。
+這個擴充套件只會在 HTB Academy 網站上運作，不會讀取你在其他網站的瀏覽內容。所有筆記與設定，都只儲存在你自己的瀏覽器本機，不會上傳，也不會傳送到任何外部伺服器。
+
+請妥善保管自己的筆記。匯出的檔案可能包含課程教材或個人資料，請勿公開張貼到網際網路；分享前也請先確認符合平台規範與使用權限。
 
 ---
 
@@ -120,4 +122,6 @@ For step-by-step instructions with screenshots, see the installation guide HTML 
 
 ### Privacy & permissions
 
-The extension runs only on the HTB Academy website and does not read your activity on other sites. All notes and settings stay locally in your own browser — they are never uploaded or sent to any external server. It requests only the minimum permissions needed to work.
+The extension runs only on the HTB Academy website and does not read your activity on other sites. All notes and settings stay locally in your own browser — they are never uploaded or sent to any external server.
+
+Please keep your own notes safe. Exported files may contain course material or personal information, so do not post them publicly on the internet, and check the platform's rules and your usage rights before sharing.
