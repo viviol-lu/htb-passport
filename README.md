@@ -6,11 +6,11 @@
 
 ## 繁體中文
 
-自動追蹤 HTB Academy 的 Path、模組與學習章節，並依章節儲存筆記，支援 Markdown 與 HTML 匯出。這是 Chrome／Firefox 擴充套件，介面與操作手冊都可以切換繁體中文與 English。
+記錄你在 HTB Academy 瀏覽過的 Path、模組與學習章節進度，並依章節儲存筆記，支援 Markdown 與 HTML 匯出。這是 Chrome／Firefox 擴充套件，介面與操作手冊都可以切換繁體中文與 English。
 
 作者：Vivian Lu · [Vivian@SecMomBag](https://vvnblog.com/en/)
 
-> 非官方工具。自動化讀取可能受 HTB 使用政策限制；版本編號與「非官方」標示，並不代表已取得 HTB 授權或已上架。
+> 非官方工具。只讀取你自己打開的頁面，不會自動開分頁或另外送出請求；版本編號與「非官方」標示，並不代表已取得 HTB 授權或已上架。
 
 ### 下載
 
@@ -68,11 +68,11 @@ shasum -a 256 academy-passport-*.zip
 
 ## English
 
-Automatically tracks your HTB Academy paths, modules and lesson sections, keeps notes per section, and exports to Markdown and HTML. It is a Chrome／Firefox extension, and both the interface and the guides switch between Traditional Chinese and English.
+Records progress on the HTB Academy paths, modules and lesson sections you view, keeps notes per section, and exports to Markdown and HTML. It is a Chrome／Firefox extension, and both the interface and the guides switch between Traditional Chinese and English.
 
 Author: Vivian Lu · [Vivian@SecMomBag](https://vvnblog.com/en/)
 
-> Unofficial tool. Automated reading may be subject to HTB's usage policy; the version number and the "unofficial" label do not imply HTB authorization or any listing.
+> Unofficial tool. It reads only the pages you open yourself; it never opens tabs automatically or sends extra requests. The version number and the "unofficial" label do not imply HTB authorization or any listing.
 
 ### Download
 
